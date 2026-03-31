@@ -1,16 +1,11 @@
-import { UserContext } from "./UserContext";
 import { Header } from "./Header";
+import { UserContextProvider } from "./UserContextProvider";
 function App() {
-  const user = {
-    name: "Abraham Lincoln",
-    age: 22,
-    role: "President",
-  };
   return (
-    <UserContext value={user}>
+    <UserContextProvider>
       <h1>Dashboard</h1>
       <Header />
-    </UserContext>
+    </UserContextProvider>
   );
 }
 
