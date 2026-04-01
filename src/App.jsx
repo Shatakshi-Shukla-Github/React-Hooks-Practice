@@ -1,11 +1,15 @@
-import { Header } from "./Header";
-import { UserContextProvider } from "./UserContextProvider";
+// import { Header } from "./Header";
+
+import UseRefExample1 from "./UseRefExample1";
+
+// import { UserContextProvider } from "./UserContextProvider";
 function App() {
   return (
-    <UserContextProvider>
-      <h1>Dashboard</h1>
-      <Header />
-    </UserContextProvider>
+    <UseRefExample1 />
+    // <UserContextProvider>
+    //   <h1>Dashboard</h1>
+    //   <Header />
+    // </UserContextProvider>
   );
 }
 
