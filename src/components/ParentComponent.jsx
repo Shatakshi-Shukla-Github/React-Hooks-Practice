@@ -7,10 +7,10 @@ export default function ParentComponent() {
     const [age, setAge] = useState(25)
     const [salary, setSalary] = useState(25000)
     const incAge = useCallback(() => {
-        setAge(age + 1)
-    })
+        setAge(prevAge => prevAge + 1)
+    }, [])
     const incSalary = useCallback(() => {
-        setSalary(salary + 1000)
+        setSalary(prevSalary => prevSalary + 1000)
     }, [])
     return (
         <div>
